@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+     <title>润竹游戏-地方麻将(儿童益智游戏开发|小游戏开发|网游开发|手游开发|棋牌开发|劈鱼开发|桌游开发|页游开发|手游开发|地方麻将开发|地方扑克开发|短视频开发|直播开发|上海游戏开发公司)</title>
+  <meta name="Keywords" content="润竹-专业游戏开发商(网游开发|手游开发|棋牌开发|劈鱼开发|桌游开发|页游开发|手游开发|地方麻将开发|地方扑克开发|儿童益智游戏开发|小游戏开发|短视频开发|直播开发|教育软件|云视频|手机直播|软件开发|软件外包|上海软件开发公司|上海软件外包公司|上海游戏开发公司|上海游戏定制公司|">
+<meta name="Description" content="润竹-专业音视频系统开发商(网游开发|手游开发|棋牌开发|劈鱼开发|桌游开发|页游开发|手游开发|地方麻将开发|地方扑克开发|短视频开发|直播开发|音视频软件开发|音视频软件定制|多媒体软件|视频直播|视频导播|视频点播|影视App|视频聊天室|安防软件|教育软件|云视频|手机直播|软件开发|软件外包|上海软件开发公司|上海软件外包公司">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <!-- Fontastic Custom icon font-->
+  <link rel="stylesheet" href="css/fontastic.css">
+  <!-- Google fonts - Poppins -->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <link rel="stylesheet" href="vendor/swiper.min.css">
+  <!-- Custom stylesheet - for your changes-->
+  <style>
+
+    @media screen and (max-width: 500px) {
+
+      body {
+        min-width: auto;
+        width: 100%;
+        background: #ffffff;
+      }
+
+
+      .logo {
+        position: absolute;
+        width: 140px;
+        left: 20px;
+        top: 20px;
+      }
+
+      .wap {
+        position: relative;
+      }
+
+      .star {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 35%;
+      }
+
+      .phone {
+        width: 46%;
+        margin-top: 100px;
+        margin-left: 27%;
+      }
+
+      .textd {
+        width: 80%;
+        margin-top: 15px;
+        margin-left: 10%;
+      }
+
+      .download-games {
+        display: flex;
+        margin: 40px 20px;
+      }
+
+      .download-games a {
+        flex: 1;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .download-games a img {
+        width: 100%;
+      }
+
+      .screenshots {
+        margin-top: 30px;
+      }
+
+      .screenshots img {
+        width: 44%;
+        height: 120px;
+        object-fit: cover;
+        margin-left: 3%;
+        margin-right: 2%;
+        margin-top: 10px;
+      }
+
+      .pc {
+        display: none;
+      }
+
+    }
+
+    @media screen and (min-width: 500px) {
+
+      html, body {
+        width: 100%;
+        height: 100%;
+        background: #000;
+      }
+
+      .logo {
+        position: absolute;
+        width: 140px;
+        left: 20px;
+        top: 20px;
+      }
+
+      .wap {
+        display: none;
+      }
+
+      .pc {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      .video {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .wrap {
+        position: absolute;
+        left: 7.625%;
+        top: 36.333%;
+      }
+
+      .s-title {
+        margin-bottom: 18px;
+        font-weight: 500;
+        font-size: 50px;
+        color: #fff;
+        text-align: left;
+        line-height: 72px;
+        text-shadow: 0 2px 4px rgba(0,0,0,.5);
+      }
+
+      .download-short {
+        display: flex;
+      }
+
+      .qrcode {
+        width: 8.5625vw;
+        margin: 0 2.1875vw 0 0;
+        text-align: center;
+        margin-right: 30px;
+      }
+
+      .qrcode-img {
+        background: #fff;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        width: 8.5625vw;
+        height: 8.5625vw;
+      }
+
+
+      .download-games {
+        margin-top: 40px;
+        display: flex;
+        width: 50%;
+      }
+
+      .download-games a {
+        flex: 1;
+        margin-right: 40px;
+      }
+
+      .download-games a img {
+        width: 100%;
+      }
+
+      .screenshots {
+        margin-top: 40px;
+        position: relative;
+        margin-left: 10%;
+      }
+
+      .screenshots img {
+        width: 20%;
+        height: 150px;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+    }
+
+  </style>
+  <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+<!-- joyq.cn Baidu tongji analytics -->
+<!-- game.lookzn.cn Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?bdef60933cfb688fbec5f2cf01cf8309";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?edb29559589092948cc4eb280e871341";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<div class="wap">
+  <div><img src="img/short-video-wap-bg.png" style="width: 100%;" alt=""></div>
+  <div style="margin-top: 34px; text-align: center">
+    <div>
+      <img src="img/shore-video-logo.png" style="width: 36.25%;margin-bottom: 20px;" alt="">
+    </div>
+    <div>
+      <img src="img/short-text.png" style="width: 65%" alt="">
+    </div>
+  </div>
+  <div style="margin-top: 84px; text-align: center">
+    <div>
+      <a href="https://fir.joyq.cn/app.php/53"><img src="img/AppStore.png" style="width: 51.25%;margin-bottom: 20px;" alt=""></a>
+    </div>
+   <div>
+     <a href="#"><img src="img/androidStore.png" style="width: 51.25%;" alt=""></a>
+   </div>
+  </div>
+  
+  <div style="background: #ffffff;margin-left: 5%;margin-right: 5%;border-radius:5px;display: flex;margin-top: 20px;">
+    <div style="flex: 1;margin: 10px;">
+      <img src="img/shortVideoIos.png"  style="width: 100%;"  alt="">
+      <div style="color: #000000;text-align: center; margin-top: 10px;">苹果手机扫码下载</div>
+    </div>
+    <div style="flex: 1;margin: 10px;">
+      <img src="img/qp-android.png" style="width: 100%;" alt="">
+      <div style="color: #000000;text-align: center;margin-top: 10px;">安卓手机扫码下载</div>
+    </div>
+    <div style="flex: 1;margin: 10px;">
+      <img src="img/sv-h5.png" style="width: 100%;" alt="">
+      <div style="color: #000000;text-align: center;margin-top: 10px;">手机扫码H5在线观看</div>
+    </div>
+ </div>
+ 
+</div>
+
+<div class="pc">
+  <div class="video">
+    <video src="img/background.mp4" loop muted autoplay></video>
+  </div>
+  <img src="img/logo.png" class="logo" alt="">
+  <div class="wrap">
+    <div class="s-title">润竹短视频</div>
+    <div class="s-title">记录生活的点点滴滴</div>
+    <div class="download-short">
+      <div class="qrcode">
+        <div class="qrcode-img">
+          <img src="img/shortVideoIos.png" style="width: 100%;height: 100%;" alt="">
+        </div>
+        <div style="color: #ffffff;font-size: 14px;text-align: center; margin-top: 8px;">苹果手机扫码下载</div>
+      </div>
+      <div class="qrcode">
+        <div class="qrcode-img">
+          <img src="img/default-qrcode.png" style="width: 100%;height: 100%;" alt="">
+        </div>
+        <div style="color: #ffffff;font-size: 14px;text-align: center; margin-top: 8px;">安卓手机扫码下载</div>
+      </div>
+      <div class="qrcode">
+        <div class="qrcode-img">
+          <img src="img/sv-h5.png" style="width: 100%;height: 100%;" alt="">
+        </div>
+        <div style="color: #ffffff;font-size: 14px;text-align: center; margin-top: 8px;">手机扫码H5在线观看</div>
+      </div>
+      <div style="flex: 1;">
+        <div style="margin-bottom: 20px;"><a href="https://fir.joyq.cn/app.php/53"><img src="img/ios_a.png" alt="" style=" width: 10vw"></a></div>
+        <div><a href="#"><img src="img/android_a.png" alt="" style=" width: 10vw"></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- JavaScript files-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--润竹短视频-->
+<!--ios地址:https://fir.joyq.cn/app.php/53-->
+<!--android地址:-->
+
+</body>
+</html>

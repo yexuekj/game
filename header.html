@@ -1,0 +1,53 @@
+<header class="header">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-holder d-flex align-items-center justify-content-between">
+          <!-- Navbar Header-->
+          <div class="navbar-header">
+            <!-- Navbar Brand -->
+            <a href="#" class="navbar-brand d-sm-inline-block">
+              <div class="brand-text d-lg-inline-block">
+              	<img src="img/logo.png" style="height:40px;" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="nav-top ">
+            <ul>
+              <li><a href="index.html" class="nav-index">首页</a></li>
+              <li><a href="product.html" class="nav-product">产品中心</a></li>
+              <li><a href="solution.html" class="nav-solution">定制开发</a></li>
+              <li><a href="aboutus.html" class="nav-about">企业简介</a></li>
+              <li><a href="http://blog.joyq.cn" target="_blank">网游资讯</a></li>
+              <li><a href="http://bbs.joyq.cn"  target="_blank">同行沟通</a></li>
+              <li>
+              	<a href="javascript:;">下载游戏</a>
+            	<div class="dropdown-box">
+            		<a href="mahjongGame.html" target="_blank">地方麻将</a>
+            		<a href="mobileGame.html" target="_blank">网络手游</a>
+            		<a href="fishingGame.html" target="_blank">益智休闲</a>
+            		<a href="onlive.html" target="_blank">娱乐直播</a>
+            		<a href="shortVideo.html" target="_blank">短视频</a>
+            	</div>
+              </li> 
+              <li><a href="contractus.html" class="nav-contract">联系我们</a></li>
+            </ul>
+          </div>
+          <a href="javascript:;" class="menu-a">
+            <img src="img/menu.png" alt="" style="width: 20px;">
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  
+  <script>
+  	/**
+   * 移动端显示顶部菜单
+   */
+  $(function () {
+    $('.menu-a').on('click', function () {
+      $('.nav-top').toggle()
+    })
+  })
+  </script>
