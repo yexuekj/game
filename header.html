@@ -48,6 +48,10 @@
   $(function () {
     $('.menu-a').on('click', function () {
       $('.nav-top').toggle()
-    })
+    });
+      /* 关闭底部导航 */
+      $('.closepop').on('click',function(){
+          $('.fixed-foot').hide();
+      });
   })
   </script>

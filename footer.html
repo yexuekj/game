@@ -1,3 +1,63 @@
+<div class="fixed-foot">
+  <div class="fixed-foot-wrap">
+    <a class="tel hide-web" href="tel:17621811115">TEL :
+      <cite>
+        <label>1</label><label>7</label><label>6</label><label>2</label><label>1</label><label>8</label><label>1</label><label>1</label><label>1</label><label>1</label><label>5</label>
+      </cite>
+    </a>
+    <span class="hide-mobile">
+                    <b>软件开发 请拨打</b>
+      <cite><label>1</label><label>7</label><label>6</label><label>2</label><label>1</label><label>8</label><label>1</label><label>1</label><label>1</label><label>1</label><label>5</label></cite>
+      <br>
+                    <i>软件定制，就找销三郎</i>
+                </span>
+    <form class="form">
+      <label>姓名：</label><input type="text" id="getname" name="name"><label>手机：</label><input type="text" id="getphone" name="phone" maxlength="11"><a href="javascript:getsubmit()">获取报价</a>
+    </form>
+    <a class="closepop" href="javascript:;">关闭</a>
+  </div>
+</div>
+<script>
+  $(function () {
+    function _isMobile(){
+      let flag = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
+      return flag;
+    }
+    var ismobile = _isMobile();
+    if(ismobile){
+      $('.hide-mobile').hide();
+      $('.banner-list').css('height', '195px');
+    }else{
+      $('.hide-web').hide();
+    }
+  });
+  function getsubmit() {
+    var params = {};
+    params.name = $('#getname').val();
+    params.phone = $('#getphone').val();
+    params.promote_source = 4;
+    if (!params.name || !params.phone) {
+      alert('请填写姓名及手机');
+      return;
+    }
+    $.ajax({
+      dataType:'json',
+      type:'post',
+      data:params,
+      url:'http://promote.ymz666.com/admin/data/dataSubmit',
+      success:function (res) {
+          if(res.code == 1){
+            alert(res.msg)
+          }
+          window.location.reload();
+      },
+      error:function (res) {
+
+      }
+    })
+  }
+</script>
+
 <footer class="main-footer">
     <div class="container-fluid">
       <div class="row">
