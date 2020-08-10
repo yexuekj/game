@@ -40,6 +40,10 @@
       alert('请填写姓名及手机');
       return;
     }
+    if (!/^1[0-9]{10}$/.test(params.phone)) {
+      alert('请输入正确手机号码');
+      return;
+    }
     $.ajax({
       dataType:'json',
       type:'post',
